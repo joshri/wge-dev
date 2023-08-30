@@ -69,6 +69,13 @@ spec:
       thresholdRange:
         max: 5
       interval: 1m
+    - name: "404s percentage 2"
+      templateRef:
+        name: not-found-percentage-2
+        namespace: canary
+      thresholdRange:
+        max: 5
+      interval: 1m
 
 
     # testing (optional)
