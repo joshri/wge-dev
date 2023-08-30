@@ -1,15 +1,15 @@
-# apiVersion: kustomize.toolkit.fluxcd.io/v1beta2
-# kind: Kustomization
-# metadata:
-#   name: progressive-delivery-ns
-#   namespace: flux-system
-# spec:
-#   interval: 1m
-#   path: ./apps/progressive-delivery/ns
-#   prune: true
-#   sourceRef:
-#     kind: GitRepository
-#     name: flux-system
+apiVersion: kustomize.toolkit.fluxcd.io/v1beta2
+kind: Kustomization
+metadata:
+  name: progressive-delivery-ns
+  namespace: flux-system
+spec:
+  interval: 1m
+  path: ./apps/progressive-delivery/ns
+  prune: true
+  sourceRef:
+    kind: GitRepository
+    name: flux-system
 # ---
 # apiVersion: kustomize.toolkit.fluxcd.io/v1beta2
 # kind: Kustomization
