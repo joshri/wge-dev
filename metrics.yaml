@@ -1,0 +1,13 @@
+apiVersion: flagger.app/v1beta1
+kind: MetricTemplate
+metadata:
+  name: cool-metric
+  namespace: flux-system
+spec:
+  provider:
+    type: prometheus
+    address: http://localhost:3000
+    insecureSkipVerify: true
+    secretRef:
+      name: secret
+  query: garbage

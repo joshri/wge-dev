@@ -62,6 +62,18 @@ spec:
       thresholdRange:
         max: 500
       interval: 30s
+    - name: "my metric"
+      templateRef:
+        name: cool-metric
+        # namespace is optional
+        # when not specified, the canary namespace will be used
+        namespace: flux-system
+      # accepted values
+      thresholdRange:
+        min: 10
+        max: 1000
+      # metric query time window
+      interval: 1m
     # testing (optional)
     webhooks:
       - name: acceptance-test
