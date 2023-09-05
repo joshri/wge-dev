@@ -6,6 +6,7 @@ metadata:
 spec:
   interval: 2m
   approvePlan: auto
+  storeReadablePlan: human
   path: ./
   sourceRef:
     kind: GitRepository
