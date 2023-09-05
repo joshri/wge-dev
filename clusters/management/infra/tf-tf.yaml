@@ -4,7 +4,7 @@ metadata:
   name: will-it-blend
   namespace: flux-system
 spec:
-  interval: 1m
+  interval: 2m
   approvePlan: auto
   path: ./
   sourceRef:
